@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Contact.css">
+  </head>
+<body>
+
+      <header id="header"></header>
+
+    <div class="container">
+        <section class="contact-section" id="contact">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="header-content">
+                    <h1 class="main-title">
+          <h2 class="heading">My <span class="highlight">Contact</span></h2>
+                    </h1>
+                    <div class="underline"></div>
+                </div>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="contact-card">
+                <!-- Left Side - Contact Info -->
+                <div class="contact-info-side">
+                    <div class="info-header">
+                        <h2>Contact Information</h2>
+                        <p>Fill out the form or reach me directly</p>
+                    </div>
+
+                    <div class="contact-info-grid">
+                        <!-- Phone -->
+                        <div class="info-card" data-type="phone">
+                            <div class="icon-wrapper">
+                                <div class="icon-bg"></div>
+                                <i class='bx bx-phone bx-rotate-90'></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p class="info-text">+91 7826889248</p>
+                                <span class="info-hint">Mon-Fri, 9AM-6PM</span>
+                            </div>
+                            <button class="action-btn" data-action="call">
+                                <i class='bx bx-phone-call'></i>
+                            </button>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="info-card" data-type="email">
+                            <div class="icon-wrapper">
+                                <div class="icon-bg"></div>
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p class="info-text">pandianprakash317@gmail.com</p>
+                                <span class="info-hint">Response within 24 hours</span>
+                            </div>
+                            <button class="action-btn" data-action="email">
+                                <i class='bx bx-paper-plane'></i>
+                            </button>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="info-card" data-type="location">
+                            <div class="icon-wrapper">
+                                <div class="icon-bg"></div>
+                                <i class='bx bx-map'></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Location</h3>
+                                <p class="info-text">Ambattur, Chennai</p>
+                                <span class="info-hint">Tamil Nadu, India</span>
+                            </div>
+                            <button class="action-btn" data-action="map">
+                                <i class='bx bx-navigation'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <p class="social-title">Follow me on</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="#" class="social-icon" title="GitHub">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form-side">
+                    <div class="form-header">
+                        <h2>Send a Message</h2>
+                        <p>I'll get back to you as soon as possible</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <!-- Form Progress Steps -->
+                        <div class="form-progress">
+                            <div class="progress-step active" data-step="1">
+                                <span class="step-number">1</span>
+                                <span class="step-label">Info</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="2">
+                                <span class="step-number">2</span>
+                                <span class="step-label">Message</span>
+                            </div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="3">
+                                <span class="step-number">3</span>
+                                <span class="step-label">Send</span>
+                            </div>
+                        </div>
+
+                        <!-- Form Fields -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="name">
+                                    <i class='bx bx-user'></i>
+                                    Your Name
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+                                <div class="input-border"></div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="email">
+                                    <i class='bx bx-envelope'></i>
+                                    Email Address
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    placeholder="your.email@example.com"
+                                    required
+                                >
+                                <div class="input-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group textarea-group">
+                                <label for="message">
+                                    <i class='bx bx-message-dots'></i>
+                                    Your Message
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    rows="5"
+                                    placeholder="Tell me about your project or inquiry..."
+                                    required
+                                ></textarea>
+                                <div class="input-border"></div>
+                                <div class="char-counter">
+                                    <span id="charCount">0</span>/500
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Section -->
+                        <div class="form-footer">
+                            <div class="form-actions">
+                                <button type="button" class="btn-secondary" id="clearBtn">
+                                    <i class='bx bx-reset'></i>
+                                    Clear All
+                                </button>
+                                <button type="submit" class="btn-primary" id="submitBtn">
+                                    <span class="btn-text">Send Message</span>
+                                    <i class='bx bx-paper-plane'></i>
+                                    <div class="btn-loader">
+                                        <div class="loader-dot"></div>
+                                        <div class="loader-dot"></div>
+                                        <div class="loader-dot"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                            <div class="form-notice">
+                                <i class='bx bx-shield-quarter'></i>
+                                <span>Your information is secure and will not be shared.</span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message">
+                        <div class="success-icon">
+                            <i class='bx bx-check-circle'></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        <button class="btn-secondary" id="newMessageBtn">
+                            <i class='bx bx-plus'></i>
+                            Send New Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+           
+        </section>
+    </div>
+
+   <script src="../Scripts/Script.js"></script>
+</body>
+</html>
