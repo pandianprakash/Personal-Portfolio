@@ -9,20 +9,18 @@ body {
     font-family: 'Inter', sans-serif;
     background: #161616;
     color: #e6f1ff;
-    min-height: 100vh;
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 90px;
+    padding-top: 20px;
 }
 .underline {
   width: 120px;
   height: 4px;
-  margin: 8px auto 60px;
-  margin-left:500px;
+  margin: 8px auto 60px; /* center automatically */
   background: linear-gradient(to right, #0ef 0%, #0ef 40%, transparent 100%);
   border-radius: 2px;
 }

@@ -138,3 +138,81 @@ body {
 .stat-item:hover {
   transform: translateY(-8px);
 }
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .stat-number {
+    font-size: 2.3rem;
+  }
+
+  .stat-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-subtitle {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .stats-bar {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 25px;
+  }
+
+  .stat-item {
+    padding: 20px 10px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-icon {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  /* Decorative circles hide on mobile */
+  .decorative-circle {
+    display: none;
+  }
+}
+
+/* Small Mobile (360px) */
+@media (max-width: 360px) {
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .stats-bar {
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .stat-item {
+    padding: 15px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+}

@@ -18,10 +18,16 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+.underline {
+  width: 120px;
+  height: 4px;
+  margin: 8px auto 60px; /* center automatically */
+  background: linear-gradient(to right, #0ef 0%, #0ef 40%, transparent 100%);
+  border-radius: 2px;
+}
 
 /* Section Header */
 .project-section {
-  padding: 70px 0;
   position: relative;
 }
 
@@ -217,6 +223,12 @@ body {
 .orange .icon-backdrop {
   background: #0ef;
 }
+.gold {
+  color: #0ef;
+}
+.gold .icon-backdrop {
+  background: #0ef;
+}
 
 .card-badge {
   background: rgba(56, 189, 248, 0.1);
@@ -304,14 +316,14 @@ body {
   color: #7dd3fc;
   gap: 15px;
 }
-.underline {
+/* .underline {
   width: 120px;
   height: 4px;
   margin: 8px auto 60px;
   margin-left: 550px;
   background: linear-gradient(to right, #0ef 0%, #0ef 40%, transparent 100%);
   border-radius: 2px;
-}
+} */
 .project-cta:hover::after {
   width: 100%;
 }
@@ -387,11 +399,6 @@ body {
   .container {
     padding: 15px;
   }
-  
-  .project-section {
-    padding: 60px 0;
-  }
-  
   .heading {
     font-size: 2.5rem;
   }
