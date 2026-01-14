@@ -784,9 +784,14 @@ body {
 
 @media (max-width: 480px) {
     .main-title {
+        font-size: 1rem;
+    }
+    .heading{
         font-size: 2rem;
     }
-    
+    .heading span{
+        font-size: 2rem;
+    }
     .contact-card {
         padding: 25px 20px;
     }
