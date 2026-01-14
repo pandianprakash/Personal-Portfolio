@@ -1,37 +1,13 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f0f1a;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-}
-
-.header a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.hero {
-  padding: 80px 60px;
-}
-
-.hero h1 span {
-  color: #ff6b3d;
-}
-
-.btn {
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: #ff6b3d;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
+body {
+  font-family: 'Inter', sans-serif;
+    background: #161616;
+  color: #f8fafc;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
