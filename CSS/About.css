@@ -69,7 +69,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(0, 238, 255, 0.1), transparent);
+  /* background: linear-gradient(45deg, rgba(0, 238, 255, 0.1), transparent); */
 }
 
 .tech-stack {
@@ -83,6 +83,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  margin-top: 90px;
 }
 
 .tech-stack span {
@@ -109,7 +110,7 @@ body {
 
 .about {
   min-height: auto;     
-  padding: 20px 25px 0 10px;  
+  padding: 20px 15px ;  
   position: relative;
   overflow: hidden;
   display: block; 
@@ -138,7 +139,7 @@ body {
   height: 4px;
   background: linear-gradient(90deg, #0ef, transparent);
   border-radius: 2px;
-  margin: 10px auto 0; /* 👈 center */
+  margin: 8px auto 40px; /* center automatically */
 }
 
 

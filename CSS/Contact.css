@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: #161616;
+  font-family: 'Roboto', sans-serif;
+    background: #1f242d; 
     color: #e6f1ff;
     overflow-x: hidden;
 }
@@ -15,8 +15,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
+  padding: 20px;  
 }
+
 .underline {
   width: 120px;
   height: 4px;
@@ -170,7 +171,7 @@ body {
      background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    padding: 50px;
+    padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -194,8 +195,7 @@ body {
 }
 
 .info-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
     background: linear-gradient(90deg, #e6f1ff, #94a3b8);
@@ -206,7 +206,7 @@ body {
 
 .info-header p {
     color: #94a3b8;
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
@@ -214,13 +214,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-bottom: 50px;
+    /* margin-bottom: 20px; */
 }
 
 .info-card {
     background: rgba(30, 41, 59, 0.5);
     border-radius: 20px;
-    padding: 25px;
+    padding: 12px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -254,8 +254,8 @@ body {
 
 .icon-wrapper {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -292,7 +292,7 @@ body {
 }
 
 .icon-wrapper i {
-    font-size: 26px;
+    font-size: 23px;
     z-index: 1;
 }
 
@@ -301,8 +301,7 @@ body {
 }
 
 .info-content h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 5px;
     color: #f1f5f9;
@@ -310,7 +309,7 @@ body {
 
 .info-text {
     color: #cbd5e1;
-    font-size: 1rem;
+    font-size: 13px;
     font-weight: 500;
     margin-bottom: 4px;
 }
@@ -343,13 +342,13 @@ body {
 
 /* Social Links */
 .social-links {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .social-title {
     color: #94a3b8;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
+    font-size: 13px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -360,8 +359,8 @@ body {
 }
 
 .social-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 14px;
     background: rgba(30, 41, 59, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -369,7 +368,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #cbd5e1;
-    font-size: 22px;
+    font-size: 15px;
     transition: all 0.3s;
     text-decoration: none;
     position: relative;
@@ -402,8 +401,7 @@ body {
 }
 
 .form-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
     background: linear-gradient(90deg, #e6f1ff, #94a3b8);
@@ -414,8 +412,7 @@ body {
 
 .form-header p {
     color: #94a3b8;
-    font-size: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Form Progress */
@@ -423,7 +420,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -445,8 +442,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 500;
     color: #94a3b8;
+    padding: 0px;
+    font-size: 12px;
     transition: all 0.3s;
 }
 
@@ -458,7 +457,7 @@ body {
 }
 
 .step-label {
-    font-size: 0.85rem;
+    font-size: 10px;
     color: #94a3b8;
     font-weight: 500;
     text-transform: uppercase;
@@ -476,7 +475,7 @@ body {
 .form-group {
     display: grid;
     gap: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .input-group {
@@ -487,7 +486,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.95rem;
+    font-size: 13px;
     font-weight: 500;
     color: #cbd5e1;
     margin-bottom: 10px;
@@ -503,8 +502,8 @@ body {
     background: rgba(30, 41, 59, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    padding: 18px 20px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 12px;
     color: #e6f1ff;
     transition: all 0.3s;
     font-family: 'Inter', sans-serif;
@@ -565,9 +564,9 @@ body {
 .btn-primary,
 .btn-secondary {
     flex: 1;
-    padding: 18px 30px;
+    padding: 15px 15px;
     border-radius: 14px;
-    font-size: 1rem;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
@@ -683,7 +682,7 @@ body {
 }
 
 .success-message h3 {
-    font-family: 'Poppins', sans-serif;
+   
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 15px;

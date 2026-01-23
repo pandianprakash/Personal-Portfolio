@@ -16,34 +16,44 @@ if (typingElement) {
   typeEffect();
 }
 
-// ================= HEADER LOAD + MOBILE NAV =================
 document.addEventListener("DOMContentLoaded", () => {
   fetch("../HTML/header.html")
     .then(res => res.text())
     .then(data => {
-      document.getElementById("header").innerHTML = data;
+      const headerContainer = document.getElementById("header");
+      headerContainer.innerHTML = data;
+
+      // Show header after load
+      headerContainer.classList.remove("hidden");
+      headerContainer.style.opacity = "1";
+      headerContainer.style.visibility = "visible";
 
       /* ===== ACTIVE LINK ===== */
       const navLinks = document.querySelectorAll(".navbar a");
       const currentPage = window.location.pathname.split("/").pop();
 
       navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (currentPage === "" && linkPage === "index.html") {
+          link.classList.add("active");
+        } 
+        else if (currentPage === linkPage) {
           link.classList.add("active");
         }
       });
 
       /* ===== MOBILE MENU ===== */
-      const navToggle = document.getElementById("navToggle");
+      const navToggle = document.querySelector(".nav-toggle");
       const navMenu = document.querySelector(".nav-menu");
 
       if (!navToggle || !navMenu) {
-        console.log("Hamburger elements not found");
+        console.error("nav-toggle or nav-menu not found in header.html");
         return;
       }
 
       navToggle.addEventListener("click", (e) => {
-        e.stopPropagation();   // outside click close avoid pannum
+        e.stopPropagation();
         navMenu.classList.toggle("active");
 
         navToggle.innerHTML = navMenu.classList.contains("active")
@@ -67,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
           header.classList.remove("scrolled");
         }
       });
-    });
+    })
+    .catch(err => console.error("Header load error:", err));
 });
 
 // ================= INTERSECTION OBSERVER =================
@@ -165,3 +176,4 @@ if (cursor && cursorDot) {
     cursorDot.style.left = e.clientX + "px";
   });
 }
+

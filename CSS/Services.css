@@ -9,7 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: #161616;
+  background: #1f242d; 
 }
 
 
@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  padding: 20px;
+  padding: 20px 95px;  
   max-width: 1400px;
   /* margin: 0 auto; */
 }
