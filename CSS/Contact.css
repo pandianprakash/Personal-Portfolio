@@ -1,15 +1,13 @@
-/* Reset & Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-    background: #1f242d; 
-    color: #e6f1ff;
-    overflow-x: hidden;
+  color: #fff;
+  background: #1f242d; 
 }
 
 .container {
@@ -809,4 +807,17 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+}@keyframes up {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.up {
+  animation: up 0.4s ease;
 }

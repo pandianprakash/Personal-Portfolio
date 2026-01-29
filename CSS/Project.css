@@ -1,3 +1,15 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background: #1f242d; 
+}
 /* Reset & Base */
 
 .container {
@@ -32,6 +44,12 @@
   max-width: 100%;
   margin: 0 auto;
   line-height: 1.2;
+}
+
+
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .heading .highlight {

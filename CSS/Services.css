@@ -1,4 +1,3 @@
-/* Skills selection - Updated for 4-column layout */
 
 * {
   margin: 0;
@@ -9,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: #1f242d; 
+  background: #161616;
 }
 
 

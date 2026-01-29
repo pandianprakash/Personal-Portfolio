@@ -3,49 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="en">
 
   <title>Muthu Pandi | Full Stack Developer Portfolio</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Muthu Pandi - Full Stack Developer specializing in React, Node.js, AI Voice Assistants and modern web applications.">
+<meta name="description" content="Muthu Pandi is a Full Stack Developer specializing in React, Node.js, AI Voice Assistants, and modern high-performance web applications.">
   <meta name="keywords" content="Muthu Pandi, Full Stack Developer, React Developer, Portfolio, Web Developer, AI Developer">
   <meta name="author" content="Muthu Pandi">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://muthupandian.netlify.app/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Muthu Pandi | Portfolio">
-  <meta property="og:description" content="Full Stack Developer & AI Voice Assistant Developer">
+  <meta property="og:title" content="Muthu Pandi – Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer building modern web apps and AI Voice Assistants using React & Node.js.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://muthupandian.netlify.app/">
-  <meta property="og:image" content="/public/preview.png">
+  <meta property="og:image" content="https://muthupandian.netlify.app/preview.png">
 
-  <!-- Twitter Card -->
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Muthu Pandi | Portfolio">
-  <meta name="twitter:description" content="Full Stack Developer & AI Voice Assistant Developer">
-  <meta name="twitter:image" content="/public/preview.png">
+  <meta name="twitter:title" content="Muthu Pandi – Full Stack Developer">
+  <meta name="twitter:description" content="Full Stack Developer & AI Voice Assistant Specialist">
+  <meta name="twitter:image" content="https://muthupandian.netlify.app/preview.png">
 
-  <!-- Favicon -->
+
   <link rel="icon" type="image/png" href="/public/favicon.ico">
 
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/Home.css">
+  <link rel="preload" href="../CSS/Home.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../CSS/Home.css"></noscript>
   <link rel="stylesheet" href="../CSS/About.css">
   <link rel="stylesheet" href="../CSS/Highlight.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muthu Pandi",
+    "url": "https://muthupandian.netlify.app",
+    "jobTitle": "Full Stack Developer",
+   "sameAs": [
+  "https://github.com/pandianprakash",
+  "https://www.linkedin.com/in/muthupandi-m31077",
+  "https://muthupandian.netlify.app"
+]
+  }
+  </script>
 </head>
+
 
 <body>
 <div id="header" class="header hidden"></div>
-  <div>
+  <main>
   <div class="cursor"></div>
 <div class="cursor-dot"></div>
 
@@ -92,7 +108,7 @@
 <div class="profile">
 <div class="profile-pin">
   <div class="hexagon">
-    <img src="../Assets/me.png" alt="Profile">
+<img src="./Assets/me.webp" alt="Muthu Pandi Profile Photo" width="300" height="300" decoding="async">
   </div>
 </div>
   </div>
@@ -146,7 +162,7 @@
     <div class="container">
       <div class="about-img">
         <div class="img-wrapper">
-          <img src="../Assets/1721457681097-removebg-preview.png" alt="Profile Picture" />
+          <img src="./Assets/1721457681097-removebg-preview.webp" alt="Profile Picture" width="350" height="350" loading="lazy" decoding="async" />
           <div class="img-overlay"></div>
           <div class="tech-stack">
             <span><i class="fab fa-html5"></i> HTML5</span>
@@ -288,7 +304,7 @@
       <div class="skill-box"><i class="fa-solid fa-lock"></i><span>Auth</span></div>
     </div>
   </div>
-
+</section>
   <div class="container-projects">
   <section class="project-section" id="projects">
     <div class="section-header">
@@ -299,16 +315,16 @@
       <!-- Card 1 -->
      <div class="project-card">
   <div class="project-image">
-    <img src="../Assets/jewelry.jpg" alt="Jewelry E-commerce">
+  <img src="../Assets/jewelry.webp" alt="Jewelry E-commerce" width="400" height="250" loading="lazy">
     <div class="project-overlay">
       <h3>E-commerce Jewelry Website</h3>
       <p>
         A premium jewelry shopping website with elegant UI, product listings,
         cart system, and smooth checkout experience.
       </p>
-      <a href="Project.html" class="project-cta">
-        View Project <i class="bx bx-right-arrow-alt"></i>
-      </a>
+     <a href="Project.html" class="project-cta" aria-label="View Jewelry E-commerce Project">
+  View Project
+</a>
     </div>
   </div>
   <div class="project-title">
@@ -319,7 +335,7 @@
       <!-- Card 2 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="../Assets/task.jpg" alt="Task Manager">
+       <img src="./Assets/task.webp" alt="Task Management Web Application Screenshot" width="400" height="250" loading="lazy" decoding="async">
           <div class="project-overlay">
             <h3>Task Management App</h3>
             <p>
@@ -339,7 +355,7 @@
       <!-- Card 3 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="../Assets/images.jpg" alt="AI Assistant">
+          <img src="./Assets/images.webp" alt="AI Assistant" width="400" height="250" loading="lazy" decoding="async">
           <div class="project-overlay">
             <h3>AiSA-X Chat Assistant</h3>
             <p>
@@ -359,7 +375,7 @@
       <!-- Card 4 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="../Assets/voice.png" alt="Voice AI">
+          <img src="./Assets/voice.webp" alt="Voice AI"  width="400" height="250" loading="lazy" decoding="async">
           <h2>voice</h2>
           <div class="project-overlay">
             <h3>Voice AI Assistant</h3>
@@ -380,7 +396,21 @@
   </section>
 </div>
 
-</section></div>
+<section class="experience-img-section" id="experience">
+  <div class="experience-wrapper">
+ <div class="section-header">
+      <div class="section-subtitle"><span>MY</span>Experience</div>
+    </div>
+    <img src="./Assets/experience.webp" alt="Experience Image" class="experience-main-img">
+  </div>
+</section>
+
+<!-- Action Navigation Bar -->
+<div class="action-bar">
+  <a href="Contact.html" class="action-btn con">
+    <i class="bx bx-message-dots"></i> Contact
+  </a>
+</div>
       <footer class="footer">
         <div class="footer-container">
             <!-- Company Info -->
@@ -465,7 +495,7 @@
             </div>
         </div>
     </footer>
-
-<script src="./Scripts/Script.js"></script>
+  </main>
+<script src="../Scripts/AllScript.js" defer></script>
 </body>
 </html>

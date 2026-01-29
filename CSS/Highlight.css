@@ -8,77 +8,93 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  
+  background: #1f242d;
+  overflow-x: hidden; /* white line / shadow fix */
 }
 
-/* ================= HIGHLIGHT SECTION ================= */
-
-        :root {
-            --primary: #0ef;
-            --dark-bg: #0a0a0f;
-            --card-bg: rgba(20, 25, 35, 0.7);
-            --text-light: #e2e8f0;
-            --text-gray: #ffffff;
-            --gradient: linear-gradient(135deg, #0ef 0%, #00b4d8 100%);
-        }
-
-        .section-subtitle {
-            font-size: 30px;
-            font-weight: 500;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-            display: inline-block;
-            position: relative;
-            padding: 0 10px;
-            margin-top: 40px;
-        }
-.section-subtitle span{
-  color:#fff;
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --primary: #0ef;
+  --dark-bg: #0a0a0f;
+  --card-bg: rgba(20, 25, 35, 0.7);
+  --text-light: #e2e8f0;
+  --text-gray: #ffffff;
+  --gradient: linear-gradient(135deg, #0ef 0%, #00b4d8 100%);
 }
-        .section-subtitle::before,
-        .section-subtitle::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 40px;
-            height: 2px;
-            background: var(--gradient);
-        }
 
-        .section-subtitle::before {
-            left: -40px;
-        }
+/* ================= SECTION TITLE ================= */
 
-        .section-subtitle::after {
-            right: -40px;
-        }
+.section-subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  margin-top: 40px;
+}
 
-        /* Decorative Elements */
-        .decorative-circle {
-            position: absolute;
-            border-radius: 50%;
-            border: 1px solid rgba(14, 239, 255, 0.1);
-            pointer-events: none;
-            z-index: 0;
-        }
+.section-subtitle span {
+  color: #fff;
+}
 
-        .circle-1 {
-            width: 300px;
-            height: 300px;
-            top: 10%;
-            left: 5%;
-            animation: rotate 30s linear infinite;
-        }
+.section-subtitle::before,
+.section-subtitle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background: var(--gradient);
+}
 
-        .circle-2 {
-            width: 200px;
-            height: 200px;
-            bottom: 10%;
-            right: 5%;
-            animation: rotate 20s linear infinite reverse;
-        }
+.section-subtitle::before {
+  left: -40px;
+}
+
+.section-subtitle::after {
+  right: -40px;
+}
+
+/* ================= DECORATIVE ELEMENTS ================= */
+
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(14, 239, 255, 0.1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 5%;
+  animation: rotate 30s linear infinite;
+}
+
+.circle-2 {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  right: 5%;
+  animation: rotate 20s linear infinite reverse;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================= STATS BAR ================= */
 
 .stats-bar {
   max-width: 1400px;
@@ -87,19 +103,28 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(14,239,255,0.2);
+
+  /* darker background to avoid white glow */
+  background: rgba(10, 10, 15, 0.85);
+
+  border: 1px solid rgba(14, 239, 255, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 40px rgba(14,239,255,0.15);
+
+  /* fixed shadow (no white bottom haze) */
+  box-shadow: 0 10px 30px rgba(14, 239, 255, 0.15);
+
   margin-top: 40px;
 }
+
+/* ================= STAT ITEM ================= */
 
 .stat-item {
   text-align: center;
   padding: 25px 10px;
   position: relative;
   transition: 0.4s ease;
+  border-radius: 15px;
 }
 
 .stat-item::after {
@@ -115,6 +140,12 @@ body {
 .stat-item:hover::after {
   opacity: 1;
 }
+
+.stat-item:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= ICON + NUMBER ================= */
 
 .stat-icon {
   font-size: 2rem;
@@ -137,9 +168,8 @@ body {
   text-transform: uppercase;
 }
 
-.stat-item:hover {
-  transform: translateY(-8px);
-}
+/* ================= NUMBER CIRCLE ================= */
+
 .number-circle {
   width: 90px;
   height: 90px;
@@ -212,7 +242,7 @@ body {
   }
 }
 
-/* Small Mobile (360px) */
+/* Small Mobile */
 @media (max-width: 360px) {
   .section-subtitle {
     font-size: 18px;

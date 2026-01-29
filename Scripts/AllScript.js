@@ -99,6 +99,8 @@ document
 
 
 // ================= PROJECT CARD ANIMATION =================
+
+
 const cards = document.querySelectorAll(".project-card");
 
 window.addEventListener("scroll", () => {
@@ -110,8 +112,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-
 // ================= CONTACT FORM PROGRESS =================
 document.addEventListener("DOMContentLoaded", function () {
 
