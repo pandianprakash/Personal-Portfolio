@@ -1,21 +1,43 @@
 // ================= TYPING EFFECT =================
+
 const typingElement = document.getElementById("typing");
 
 if (typingElement) {
-  const text = "Software Developer";
-  let index = 0;
+  const texts = [
+    "Web Developer",
+    "Full Stack Developer",
+    "MERN Stack Developer"
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
 
   function typeEffect() {
-    if (index < text.length) {
-      typingElement.innerHTML += text.charAt(index);
-      index++;
-      setTimeout(typeEffect, 100);
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+      typingElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentText.length) {
+        setTimeout(() => (isDeleting = true), 1200);
+      }
+    } else {
+      typingElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+      }
     }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
   }
 
   typeEffect();
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch("../HTML/header.html")
     .then(res => res.text())
@@ -24,7 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
       headerContainer.innerHTML = data;
 
       // Show header after load
-      headerContainer.classList.remove("hidden");
+    const headerElement = document.querySelector(".header");
+
+setTimeout(() => {
+  headerElement.classList.add("show");
+}, 100);
       headerContainer.style.opacity = "1";
       headerContainer.style.visibility = "visible";
 

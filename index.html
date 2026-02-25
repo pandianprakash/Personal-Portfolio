@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-language" content="en">
 
-  <title>Muthu Pandi | Full Stack Developer Portfolio</title>
+<title>Muthu Pandi – Software Developer | React & Node.js Expert</title>
 
   <!-- SEO Meta -->
-<meta name="description" content="Muthu Pandi is a Full Stack Developer specializing in React, Node.js, AI Voice Assistants, and modern high-performance web applications.">
-  <meta name="keywords" content="Muthu Pandi, Full Stack Developer, React Developer, Portfolio, Web Developer, AI Developer">
+<meta name="description" content="Muthu Pandi is a Software Developer specializing in React, Node.js, and AI Voice Assistants. View portfolio, projects, and contact details.">  <meta name="keywords" content="Muthu Pandi, Full Stack Developer, React Developer, Portfolio, Web Developer, AI Developer">
   <meta name="author" content="Muthu Pandi">
   <meta name="robots" content="index, follow">
 
@@ -27,7 +26,7 @@
   <meta name="twitter:title" content="Muthu Pandi – Full Stack Developer">
   <meta name="twitter:description" content="Full Stack Developer & AI Voice Assistant Specialist">
   <meta name="twitter:image" content="https://muthupandian.netlify.app/preview.png">
-
+  <meta itemprop="image" content="https://muthupandian.netlify.app/Assets/me.webp">
 
   <link rel="icon" type="image/png" href="/public/favicon.ico">
 
@@ -42,25 +41,30 @@
   <link rel="stylesheet" href="../CSS/About.css">
   <link rel="stylesheet" href="../CSS/Highlight.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Muthu Pandi",
-    "url": "https://muthupandian.netlify.app",
-    "jobTitle": "Full Stack Developer",
-   "sameAs": [
-  "https://github.com/pandianprakash",
-  "https://www.linkedin.com/in/muthupandi-m31077",
-  "https://muthupandian.netlify.app"
-]
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muthu Pandi",
+  "url": "https://muthupandian.netlify.app/",
+  "image": "https://muthupandian.netlify.app/Assets/me.webp",
+  "jobTitle": "Software Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Vinsights Solution"
+  },
+  "sameAs": [
+    "https://github.com/pandianprakash",
+    "https://www.linkedin.com/in/muthupandi-m31077"
+  ]
+}
+</script>
 </head>
 
 
 <body>
-<div id="header" class="header hidden"></div>
+<header id="header"></header>
+
   <main>
   <div class="cursor"></div>
 <div class="cursor-dot"></div>
@@ -108,7 +112,12 @@
 <div class="profile">
 <div class="profile-pin">
   <div class="hexagon">
-<img src="./Assets/me.webp" alt="Muthu Pandi Profile Photo" width="300" height="300" decoding="async">
+<img src="https://muthupandian.netlify.app/Assets/me.webp"
+     alt="Muthu Pandi - Software Developer from Tamil Nadu"
+     width="400"
+     height="400"
+     loading="eager"
+     fetchpriority="high">
   </div>
 </div>
   </div>
@@ -435,7 +444,7 @@
             <div class="footer-column">
                 <h3 class="footer-title">Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="Home.html"><i class='bx bx-chevron-right'></i> Home</a></li>
+                    <li><a href="index.html"><i class='bx bx-chevron-right'></i> Home</a></li>
                     <li><a href="About.html"><i class='bx bx-chevron-right'></i> About</a></li>
                     <li><a href="Services.html"><i class='bx bx-chevron-right'></i> Services</a></li>
                     <li><a href="Contact.html"><i class='bx bx-chevron-right'></i> Contact</a></li>
@@ -496,6 +505,6 @@
         </div>
     </footer>
   </main>
-<script src="../Scripts/AllScript.js" defer></script>
+<script src="./Scripts/AllScript.js" defer></script>
 </body>
 </html>

@@ -7,13 +7,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background: #1f242d; 
+  background: #161616; 
+
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
   padding: 20px;  
+
 }
 
 .underline {
@@ -89,7 +91,7 @@ body {
 
 .section-label {
     display: inline-block;
-    background: rgba(56, 189, 248, 0.1);
+    background: rgba(31, 36, 45, 0.9);
     color: #38bdf8;
     padding: 8px 20px;
     border-radius: 25px;

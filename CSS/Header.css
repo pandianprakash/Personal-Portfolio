@@ -12,16 +12,15 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-/* ===== HEADER LOAD SMOOTH EFFECT ===== */
-#header {
+.header {
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
+  transform: translateY(-40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-#header.show {
+.header.show {
   opacity: 1;
-  visibility: visible;
+  transform: translateY(0);
 }
 
 /* ===== HEADER ===== */
