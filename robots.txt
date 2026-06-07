@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muthupandian.netlify.app/sitemap.xml

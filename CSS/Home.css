@@ -137,17 +137,17 @@ a, button, input, textarea, select {
   margin-left: 20px;
 }
 
-.home-content h3 {
+.home-content h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-.home-content h3 span {
+.home-content h2 span {
   color: #0ef;
 }
 
-.home-content h2 {
+.home-content h1 {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -304,11 +304,11 @@ a, button, input, textarea, select {
     margin-left: 0;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 22px;
   }
 
-  .home-content h2 {
+  .home-content h1 {
     font-size: 34px;
   }
 
@@ -350,11 +350,11 @@ a, button, input, textarea, select {
     padding: 30px 15px 40px;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 20px;
   }
 
-  .home-content h2 {
+  .home-content h1 {
     font-size: 28px;
   }
 
@@ -768,7 +768,7 @@ a, button, input, textarea, select {
 }
 
 /* Overlay text */
-.project-overlay h3 {
+.project-overlay h2 {
   font-size: 22px;
   margin-bottom: 10px;
   color: #0ef;
@@ -1069,7 +1069,7 @@ a, button, input, textarea, select {
                 border-radius: 15px;
             }
 
-            .form-header h2 {
+            .form-header h1 {
                 font-size: 22px;
             }
 
