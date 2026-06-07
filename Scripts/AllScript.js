@@ -203,3 +203,15 @@ if (cursor && cursorDot) {
   });
 }
 
+window.addEventListener("load", () => {
+
+  setTimeout(() => {
+
+    document.getElementById("loader").classList.add("hide");
+
+    document.querySelector(".header").style.opacity = "1";
+    document.querySelector(".header").style.visibility = "visible";
+
+  }, 200);
+
+});

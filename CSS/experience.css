@@ -189,3 +189,42 @@ body {
     font-size: 12.5px;
   }
 }
+
+#loader{
+    position: fixed;
+    inset: 0;
+    background: rgba(22,22,22,0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999999;
+    transition: opacity .5s ease, visibility .5s ease;
+}
+
+/* Hide Loader */
+#loader.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Spinner */
+.spinner{
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(255,255,255,.15);
+    border-top: 5px solid #0ef;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+    box-shadow: 0 0 20px #0ef;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
